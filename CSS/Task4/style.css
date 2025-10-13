@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+}
+#child1{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+}
+#child2{
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+}
+#child3{
+    height: 100px;
+    width: 100px;
+    background-color: lightgoldenrodyellow;
+}

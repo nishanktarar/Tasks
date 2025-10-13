@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+#header h2{
+   
+    font-size: 50px;
+}
+#header h5{
+    font-style: italic;
+    /* font-size: 20px; */
+}
+#about{
+    width: 60%;
+    background-color: rgb(227, 168, 168);
+    text-align: center;
+    color: rgb(1, 1, 1);
+    padding: 20px 20px;
+    margin: 40px auto;
+}
+#about h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#education{
+    width: 60%;
+    background-color: rgb(179, 201, 142);
+    text-align: center;
+    color: rgb(1, 1, 1);
+    padding: 20px 20px;
+    margin: 40px auto;
+}
+#education h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#education h4{
+    background-color: seashell;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-transform: uppercase; 
+}
+#skills
+{
+    width: 60%;
+    background-color: rgb(142, 179, 201);
+    text-align: center;
+    color: rgb(1, 1, 1);
+    padding: 20px 20px;
+    margin: 40px auto;
+}
+#skills h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#skills h4{
+    text-transform: uppercase; 
+    background-color: seashell;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#projects
+{
+    width: 60%;
+    background-color: rgb(201, 142, 179);
+    text-align: center;
+    color: rgb(1, 1, 1);
+    padding: 20px 20px;
+    margin: 40px auto;
+}
+#projects h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#projects h4{
+    text-transform: uppercase; 
+    background-color: seashell;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#contact
+{
+    width: 60%;
+    background-color: rgb(179, 142, 201);
+    text-align: center;
+    color: rgb(1, 1, 1);
+    padding: 20px 20px;
+    margin: 40px auto;
+}
+#contact h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#contact p{
+    background-color: seashell;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
