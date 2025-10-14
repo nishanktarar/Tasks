@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1541348263662-e068662d82af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974);
+    background-size: cover;
+    background-position: center; 
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+button{
+    margin: 20px;
+    margin-left: 70%;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: burlywood;
+}
