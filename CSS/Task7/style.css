@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    padding: 40px 60px ;
+}
+.main{
+
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 350px 350px;
+    grid-template-rows: 60px 1fr 1fr;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    grid-template-areas:
+    "header header header"
+    "aside fig1 fig1"
+    "aside fig2 fig3";
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+header a:hover{
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    grid-area: aside;
+}
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#fig1, #fig2, #fig3 {
+    border-radius: 16px;
+    overflow: hidden; 
+    height: 100%;
+    width: 100%;
+}
+#fig1 img, #fig2 img, #fig3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+#aside h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#aside p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+#aside > a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+#aside h3{
+    font-size: 1rem;
+    color: #777;
+    margin: 25px;
+}
+#aside button {
+    width: 200px;
+    height: 100px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 15px; 
+}
+#asidebtm{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: auto;
+}
+#asidebtm h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #060606;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
