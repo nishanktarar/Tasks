@@ -11,7 +11,7 @@ I am currently deep-diving into **CSS (Cascading Style Sheets)**. My main goal i
 ---
 
 🌐 How to View My Work
-Each task folder (e.g., 01-Selectors-and-Properties) is a self-contained mini-project.
+Each task folder is a self-contained mini-project.
 
 1. View Locally:
 Clone this repository to your computer.
@@ -19,7 +19,7 @@ Navigate into any task folder (e.g., CSS/01-Selectors-and-Properties).
 Open the index.html file in your web browser to see the result.
 
 2. View Live Site (via GitHub Pages): If this repository is deployed, you can access individual tasks directly via their URL.
-Example: https://<your-username>.github.io/<repository-name>/CSS/01-Selectors-and-Properties/
+
 
 🛠️ Technologies & Tools
 HTML5: For content structure.
