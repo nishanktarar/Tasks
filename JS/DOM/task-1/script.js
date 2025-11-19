@@ -28,3 +28,4 @@ decBtn.addEventListener("mouseout",()=>{
     dec.style.color="white";
     dec.style.backgroundColor="grey";
 });
+
