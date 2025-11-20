@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    
+}
+h1{
+    height: 400px;
+    width: 600px;
+    border-radius: 10px; 
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    
+}
+button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+button :active{
+    scale: 0.95;
+}
+.team-name{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.details{
+    font-size: 1.2rem;
+    text-align: center;
+}   
