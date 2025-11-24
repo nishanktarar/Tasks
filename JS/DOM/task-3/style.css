@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    overflow: hidden; 
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button{
+   padding: 20px 30px;
+   font-weight: 600;
+   font-size: 30px;
+   background-color: rgb(169, 58, 3);
+   cursor: pointer;
+   position: relative;
+   z-index: 5;
+}
+button:active{
+    scale: 0.98;
+}
