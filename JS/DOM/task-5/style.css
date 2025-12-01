@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    width: 200px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.card img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.card h2{
+    font-size: 20px;
+    text-align: center;
+}
+.card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 80px;
+  background: linear-gradient(to right bottom, rgb(255, 50, 90), rgb(140, 0, 120));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  animation: none;
+  transition: all cubic-bezier(.83,1.94,.57,.85) 0.3s; 
+}
