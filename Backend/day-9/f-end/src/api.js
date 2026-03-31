@@ -1,1 +1,1 @@
-export const BASE_URL = "http://localhost:3000/api";
+export const BASE_URL = "https://day-2-kv0u.onrender.com/api";

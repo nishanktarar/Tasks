@@ -268,7 +268,7 @@ export default function App() {
       <footer className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40">
         <div className="bg-white/5 backdrop-blur-xl border border-white/10 px-4 py-2 rounded-full shadow-xl flex items-center gap-3 text-[10px] font-mono uppercase tracking-widest text-white/50">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span>Server: http://localhost:3000</span>
+          <span>Server: https://day-2-kv0u.onrender.com</span>
           <span className="w-1 h-1 bg-white/20 rounded-full" />
           <span>Notes: {notes.length}</span>
         </div>
