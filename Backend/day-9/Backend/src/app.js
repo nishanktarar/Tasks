@@ -4,9 +4,10 @@ const cors = require('cors')
 const app = express()
 app.use(cors());
 app.use(express.json());
+app.use(express.static('./public/dist'));
 
 //post api
-app.post('/notes',async (req,res)=>{
+app.post('/api/notes',async (req,res)=>{
     const {title,description} = req.body
 
     const notes = await noteModel.create({
@@ -20,7 +21,7 @@ app.post('/notes',async (req,res)=>{
 })
 
 //get all notes
-app.get('/notes',async (req,res)=>{
+app.get('/api/notes',async (req,res)=>{
     const notes = await noteModel.find()
 
     res.status(200).json({
@@ -29,7 +30,7 @@ app.get('/notes',async (req,res)=>{
 })
 
 //delete notes by id
-app.delete('/notes/:id',async (req,res)=>{
+app.delete('/api/notes/:id',async (req,res)=>{
     const {id} = req.params
     const deletedNote = await noteModel.findByIdAndDelete(id)
 
@@ -47,10 +48,13 @@ app.delete('/notes/:id',async (req,res)=>{
 
 
 //update the description of a note 
-app.patch('/notes/:id',async (req,res)=>{
+app.patch('/api/notes/:id',async (req,res)=>{
     const id = req.params.id
     const {description} = req.body
-    const updatedNote = await noteModel.findByIdAndUpdate(id,{ description })
+    const updatedNote = await noteModel.findByIdAndUpdate(id,
+        req.body,
+        {new :true}
+    )
 
        if (!updatedNote) {
             return res.status(404).json({

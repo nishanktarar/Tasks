@@ -1,0 +1,5 @@
+{
+  "name": "API Note Tester",
+  "description": "A frontend interface for testing backend Note APIs (GET, POST, PATCH, DELETE) with an interactive UI.",
+  "requestFramePermissions": []
+}
