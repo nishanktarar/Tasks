@@ -69,7 +69,7 @@ async function getPostController(req,res){
 
     const userId = decoded.id
 
-    const posts= await postModel.find({user:userId})
+    const posts= await postModel.findOne({user:userId})
 
     res.status(200)
         .json({
@@ -78,8 +78,53 @@ async function getPostController(req,res){
         })
 }
 
+async function getPostDetailsController(req,res){
+    const token = req.cookies.token;
+
+    if(!token){
+        return res.status(401).json({
+            message:"Unauthorized User"
+        })
+    }
+
+    let decoded;
+    try{
+      decoded = jwt.verify(token,process.env.JWT_KEY)
+    }catch(err){
+        return res.status(401).json({
+            message:"invalid user"
+        })
+    }
+
+    const userId = decoded.id;
+    const postId = req.params.postId;
+
+
+    const posts = await postModel.findById(postId)
+
+    if(!posts){
+        return res.status(404).json({
+            message:"content not found"
+        })
+    }
+
+    const isValidUser = posts.user.toString() === userId;
+
+    if(!isValidUser){
+        return res.status(403).json({
+            message:"forbidden content"
+        })
+    }
+
+    return res.status(201).json({
+        message:"posts fetched successfully",
+        posts
+    })
+
+}
 
 module.exports={
     createPostController,
-    getPostController
+    getPostController,
+    getPostDetailsController
 }
